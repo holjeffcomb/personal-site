@@ -1,0 +1,18 @@
+.header {
+  margin: auto;
+  text-align: center;
+}
+
+.navLinks {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.mainContent {
+  margin: auto;
+  background-color: red;
+  max-width: 70%;
+}
