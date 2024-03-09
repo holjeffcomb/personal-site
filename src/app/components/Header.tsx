@@ -1,10 +1,13 @@
 import styles from "../page.module.css";
 import Link from "next/link";
+import { Gidugu } from "next/font/google";
+
+const gidugu = Gidugu({ subsets: ["latin"], weight: "400" });
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <h1>Jeff&apos;s Header</h1>
+      <h1 className={gidugu.className}>Jeff Holcomb</h1>
       <ul className={styles.navLinks}>
         <li>
           <Link href="/">Home</Link>

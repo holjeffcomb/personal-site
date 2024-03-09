@@ -1,14 +1,20 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
   margin: auto;
   text-align: center;
 }
 
 .navLinks {
-  color: red;
+  color: rgb(174, 174, 174);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 50%;
-  margin: auto;
+  align-items: center;
+  list-style-type: none;
 }
 
 .mainContent {
@@ -17,4 +23,8 @@
   max-width: 70%;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.profPic {
+  border-radius: 100%;
 }

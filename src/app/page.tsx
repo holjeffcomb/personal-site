@@ -1,10 +1,17 @@
 import Image from "next/image";
+import profilePic from "../images/profile-pic.png";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
       <h2>Hi I'm Jeff</h2>
+      <Image
+        className={styles.profPic}
+        src={profilePic}
+        alt="Picture of Jeff"
+        height={400}
+      />
       <p>
         You may know me from such things as Periphery's lighting guy or
         videographer, or being a scuba diver, or climber. Well truth is, I'm all
