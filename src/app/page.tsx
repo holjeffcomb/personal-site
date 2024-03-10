@@ -1,26 +1,30 @@
 import Image from "next/image";
-import profilePic from "../images/profile-pic.png";
+import profilePic from "./images/profile-pic.png";
 import styles from "./page.module.css";
+import getBase64 from "./utils/getBase64";
 
-export default function Home() {
+export default async function Home() {
+  const myBlurData = await getBase64("profile-pic.png");
   return (
     <>
-      <h2>Hi I'm Jeff</h2>
+      <h2>Hi I&apos;m Jeff</h2>
       <Image
         className={styles.profPic}
         src={profilePic}
         alt="Picture of Jeff"
+        placeholder="blur"
+        blurDataURL={myBlurData}
         height={400}
       />
       <p>
-        You may know me from such things as Periphery's lighting guy or
-        videographer, or being a scuba diver, or climber. Well truth is, I'm all
-        these things.
+        You may know me from such things as Periphery&apos;s lighting guy or
+        videographer, or being a scuba diver, or climber. Well truth is,
+        I&apos;m all these things.
       </p>
       <p>
-        "How do you find the time?" you ask? Well, its simple. I make the time.
-        I make the time because its important. Don't waste time. Every day is
-        finite.
+        &quot;How do you find the time?&quot; you ask? Well, its simple. I make
+        the time. I make the time because its important. Don&apos;t waste time.
+        Every day is finite.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
