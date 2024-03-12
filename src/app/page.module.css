@@ -77,3 +77,19 @@
   width: 300px;
   position: relative;
 }
+
+.formContainer {
+  width: 500px;
+  margin: auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+.formContainer label,
+.formContainer input {
+  margin: 5px;
+}
+
+.invalid {
+  border: 1px solid red;
+}
