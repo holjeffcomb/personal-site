@@ -1,3 +1,5 @@
+// helper function for getting the base64 value of an image for use in a blurred placeholder
+
 import fs from "node:fs/promises";
 import { getPlaiceholder } from "plaiceholder";
 
