@@ -7,6 +7,13 @@ import styles from "../page.module.css";
 interface Client {
   name: string;
   logoFileName: StaticImageData;
+  websiteUrl: string;
+}
+
+interface Video {
+  name: string;
+  date: string;
+  client: string;
 }
 
 const clients: Client[] = [
@@ -33,12 +40,45 @@ const clients: Client[] = [
   {
     name: "Cannibal Corpse",
     logoFileName: {},
-    websiteUrl: "",
+    websiteUrl: "https://www.cannibalcorpse.net",
   },
   {
     name: "Plini",
     logoFileName: {},
-    websiteUrl: "",
+    websiteUrl: "https://plini.co",
+  },
+];
+
+const videos: Video[] = [
+  {
+    name: "Everything is Fine",
+    date: "Feb 2023",
+    client: "Periphery",
+  },
+  {
+    name: "P4: The Making of Hail Stan",
+    date: "Unknown",
+    client: "Periphery",
+  },
+  {
+    name: "Remain Indoors",
+    date: "Unknown",
+    client: "Periphery",
+  },
+  {
+    name: "Juggerdoc",
+    date: "Unknown",
+    client: "Periphery",
+  },
+  {
+    name: "Summer's Laughter",
+    date: "Summer 2012",
+    client: "Periphery",
+  },
+  {
+    name: "The Coachfire Chronicles",
+    date: "Unknown",
+    client: "Periphery",
   },
 ];
 
